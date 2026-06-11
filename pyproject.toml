@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "recon-toolkit"
+version = "0.1.0"
+description = "Subdomain & asset recon toolkit for bug bounty"
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "aiohttp>=3.9.0",
+    "colorama>=0.4.6",
+]
+
+[project.scripts]
+recon = "recon:main"
+
+[tool.setuptools.packages.find]
+include = ["modules*"]
