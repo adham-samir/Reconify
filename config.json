@@ -1,0 +1,7 @@
+{
+  "default_wordlist": "/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt",
+  "default_threads": 200,
+  "default_ports": "80,443,8080,8000,8888",
+  "default_timeout": 120,
+  "max_concurrent_tools": 5
+}
