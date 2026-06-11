@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=64.0"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "recon-toolkit"
@@ -19,3 +19,6 @@ recon = "recon:main"
 
 [tool.setuptools.packages.find]
 include = ["modules*"]
+
+[tool.setuptools]
+py-modules = ["recon"]
